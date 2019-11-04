@@ -15,8 +15,11 @@ func main() {
 
 	go http.ListenAndServe("127.0.0.1:8080", &handler)
 
-	// Edit the path to run your Google Chrome
 	exec.Command("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+			"--new-window",
+			"http://127.0.0.1:8080/").Run()
+
+	exec.Command("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
 			"--new-window",
 			"http://127.0.0.1:8080/").Run()
 }
