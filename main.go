@@ -24,13 +24,23 @@ func main() {
 			"http://127.0.0.1:8080/").Run()
 }
 
-const CONTENTS = `<head>
-<title>visp</title>
+const CONTENTS = `<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>visp 1.0.1</title>
 </head>
 
 <body>
 <h1>visp</h1>
 <video autoplay playsinline width="960" height="540"></video>
+
+<style>
+video {
+	border: solid 1px black;
+}
+</style>
 
 <script>
 const mediaStreamConstraints = {
@@ -54,4 +64,6 @@ navigator.mediaDevices
 		.catch(handleLocalMediaStreamError);
 </script>
 </body>
+
+</html>
 `
