@@ -29,7 +29,7 @@ const CONTENTS = `<!DOCTYPE html>
 <html>
 
 <head>
-<title>visp 1.0.1</title>
+<title>visp 1.0.2</title>
 </head>
 
 <body>
@@ -39,6 +39,7 @@ const CONTENTS = `<!DOCTYPE html>
 <style>
 video {
 	border: solid 1px black;
+	cursor: not-allowed;
 }
 </style>
 
